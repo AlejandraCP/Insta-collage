@@ -33,6 +33,7 @@
   height: 10rem;
 }
 
+
 .cont-photo {
   padding: 0.3rem;
 }
@@ -42,7 +43,7 @@
   border: 4px dashed #868383f3 !important;
 }
 
-.conCollage {
+.collage {
   border: 1px solid black;
   height: 40vh;
 }

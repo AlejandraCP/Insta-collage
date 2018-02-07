@@ -18,9 +18,9 @@ var photosBox = document.querySelector('.photos-box');
 
 document.addEventListener('dragstart', drag);
 document.addEventListener('dragover', permitirDrop);
-document.addEventListener('dragleave', leave);
-var cont = document.querySelector('.collage');
-cont.addEventListener('drop', drop);
+// document.addEventListener('dragleave', leave);
+document.addEventListener("dragend", end);
+document.addEventListener('drop', drop);
 
 function drag(event) {
   event.dataTransfer.setData('text', event.target.id);
@@ -34,16 +34,14 @@ function permitirDrop(event) {
 
 function drop(event) {
   event.preventDefault();
-  if (event.target.id === 'collage') {
-    let idFoto = event.dataTransfer.getData('text');
+    let idFoto = event.dataTransfer.getData("text");
     event.target.appendChild(document.getElementById(idFoto));
-    console.log('yea');
-  } else {
-    console.log('nop');
-  }
-  console.log('drop');
+    console.log(event.target);
 }
 
-function leave(event) {
+function end(event) {
+  console.log('dragend');
+  console.log(event.target);
+  event.target.classList.remove('img-fluid');
 }
 
