@@ -1,0 +1,25 @@
+.collage {
+  height: 40vh;
+  background-color: rgb(63, 238, 180);
+}
+
+.phrase {
+  height: 10vh;
+  background-color: rgb(243, 243, 207);
+}
+
+.photos {
+  background-color: rgb(245, 200, 145);
+}
+
+.pad {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+@media (min-width: 720px) {
+  .pad {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
