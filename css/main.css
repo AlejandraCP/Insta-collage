@@ -36,3 +36,13 @@
 .cont-photo {
   padding: 0.3rem;
 }
+
+.detect {
+  background: #ddd;
+  border: 4px dashed #868383f3 !important;
+}
+
+.conCollage {
+  border: 1px solid black;
+  height: 40vh;
+}

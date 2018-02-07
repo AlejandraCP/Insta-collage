@@ -1,14 +1,14 @@
 photos = [
-  'naturaleza1.jpg',
-  'naturaleza2.jpg',
-  'naturaleza3.jpg',
-  'naturaleza4.jpg',
-  'naturaleza5.jpg',
-  'naturaleza6.jpg',
-  'naturaleza7.jpg',
-  'naturaleza8.jpg',
-  'naturaleza9.jpg',
-  'naturaleza10.jpg',
-  'naturaleza11.jpg',
-  'naturaleza12.jpg'
+  'naturaleza1',
+  'naturaleza2',
+  'naturaleza3',
+  'naturaleza4',
+  'naturaleza5',
+  'naturaleza6',
+  'naturaleza7',
+  'naturaleza8',
+  'naturaleza9',
+  'naturaleza10',
+  'naturaleza11',
+  'naturaleza12'
 ];
