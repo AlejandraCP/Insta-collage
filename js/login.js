@@ -50,7 +50,7 @@ const validateNameUser = () => {
 
 
 const nextPage = () => {
-  window.location.href = 'views/index.html';
+  window.location.href = 'views/home.html';
 };
 
 // eventos
