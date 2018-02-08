@@ -1,10 +1,10 @@
-var photosBox = document.querySelector('.photos-box');
+let photosBox = document.querySelector('.photos-box');
 (function() {
-  var i = 0;
+  let i = 0;
   for (i; i < photos.length; i++) {
-    var containerPhoto = document.createElement('div');
+    let containerPhoto = document.createElement('div');
     containerPhoto.classList.add('cont-photo', 'col-md-2', 'col-xs-4');
-    var photo = document.createElement('img');
+    let photo = document.createElement('img');
     photo.src = '../assets/images/' + photos[i] + '.jpg';
     photo.setAttribute('draggable', true);
     photo.setAttribute('id', photos[i]);
@@ -47,8 +47,8 @@ function end(event) {
 
 // opciones de collage para 4 fotos
 
-var photo4 = document.getElementById('photos-col-4');
-var photo3 = document.getElementById('photos-col-3');
+let photo4 = document.getElementById('photos-col-4');
+let photo3 = document.getElementById('photos-col-3');
 let option3 = document.getElementById('option-3');
 let option4 = document.getElementById('option-4');
 
