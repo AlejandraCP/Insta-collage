@@ -13,42 +13,49 @@
   <title>Insta-Collage</title>
 </head>
 
-<body>
-
-  <section class="grad">
-    <div class="dropdown language">
-      <button class="btn  dropdown-toggle transparent white " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">
-        Idioma español(España)
-      </button>
-    </div>
-    <div class="center-login">
-    <h1 class="">Instagram</h1>
-    <div class="box-input">
-      <div class="form-group ">
-        <input type="text" class="white p-3 opacity" id="username" placeholder="example@example.com">
+<body class="container">
+  <div class="row">
+      <div class="col-md-6 d-none d-lg-block h100">
+         <img src="assets/images/foto.png" alt="img-photo">
       </div>
-      <div class="form-group">
-        <input type="password" class="white p-3 opacity" id="password" placeholder="password">
-      </div>
-
-      <button class="btn-block p-3 btn-signin white" id="btn-login">Iniciar Sesión</button>
-      <div class="mt-3">
-        <p class="help">¿Has olvidado tu información de inicio de sesión?<span class="weight"> Obtén ayuda</span> </p>
-      </div>
-      <div class="line">
-        <span class="weight help size-o ">O</span>
-      </div>
-      <button class="btn-block p-3 white btn-face">
-        <span class="icon-facebook2 size"></span>Iniciar sesión con Facebook</button>
-    </div>
+      <section class="grad col-xs-12 col-sm-12 col-lg-6">
+          <div class="dropdown language">
+            <button class="btn  dropdown-toggle transparent white " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Idioma español(España)
+            </button>
+          </div>
+          <div class="center-login">
+          <h1 class="">Instagram</h1>
+          <div class="box-input">
+            <div class="form-group ">
+              <input type="text" class="white p-3 opacity" id="username" placeholder="example@example.com">
+            </div>
+            <div class="form-group">
+              <input type="password" class="white p-3 opacity" id="password" placeholder="password">
+            </div>
+      
+            <button class="btn-block p-3 btn-signin white" id="btn-login">Iniciar Sesión</button>
+            <div class="mt-3">
+              <p class="help">¿Has olvidado tu información de inicio de sesión?<span class="weight"> Obtén ayuda</span> </p>
+            </div>
+            <div class="line">
+              <span class="weight help size-o ">O</span>
+            </div>
+            <button class="btn-block p-3 white btn-face">
+              <span class="icon-facebook2 size"></span>Iniciar sesión con Facebook</button>
+          </div>
+        </div>
+         
+          <div class="optionFooter">
+              
+            <p class="mb-0">¿No tienes una cuenta? <span class="weight">Registrate</span></p>
+          </div>
+        </section>
   </div>
-   
-    <div class="optionFooter">
-        
-      <p class="mb-0">¿No tienes una cuenta? <span class="weight">Registrate</span></p>
-    </div>
-  </section>
+
+
+  
 
   <script src="js/login.js"></script>
 </body>
