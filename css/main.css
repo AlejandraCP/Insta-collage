@@ -21,11 +21,13 @@ div .pad {
 }
 
 /* Login**/
+body{
+  background: linear-gradient(#78B176, #C87A59);
+}
 
 .grad {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(#78B176, #C87A59);
   color: white;
   text-align: center;
 }
@@ -95,7 +97,7 @@ input::placeholder{
   height: 10vh;
   padding-top: 1em;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.09);
+  
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -126,13 +128,24 @@ input::placeholder{
   display: inline-block;
 }
 
+.h100{
+  height: 100vh;
+  text-align: center;
+  padding: 12em 0;
+}
+
+
+
 @media (min-width: 720px) {
   .pad {
     padding-left: 0;
     padding-right: 0;
   }
 
+  .optionFooter{
+    background: transparent;
 
+  }
 }
 
 .photos-box {
