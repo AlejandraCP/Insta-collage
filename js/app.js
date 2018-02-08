@@ -3,9 +3,7 @@ var photosBox = document.querySelector('.photos-box');
   var i = 0;
   for (i; i < photos.length; i++) {
     var containerPhoto = document.createElement('div');
-    containerPhoto.classList.add('cont-photo');
-    containerPhoto.classList.add('col-md-2');
-    containerPhoto.classList.add('col-sm-4');
+    containerPhoto.classList.add('cont-photo', 'col-md-2', 'col.sm-4');
     var photo = document.createElement('img');
     photo.src = '../assets/images/' + photos[i] + '.jpg';
     photo.setAttribute('draggable', true);
@@ -18,8 +16,7 @@ var photosBox = document.querySelector('.photos-box');
 
 document.addEventListener('dragstart', drag);
 document.addEventListener('dragover', permitirDrop);
-// document.addEventListener('dragleave', leave);
-document.addEventListener("dragend", end);
+document.addEventListener('dragend', end);
 document.addEventListener('drop', drop);
 
 function drag(event) {
@@ -34,14 +31,18 @@ function permitirDrop(event) {
 
 function drop(event) {
   event.preventDefault();
-    let idFoto = event.dataTransfer.getData("text");
+  if (event.target.id === 'photo1' || event.target.id === 'photo2' || event.target.id === 'photo3') {
+    let idFoto = event.dataTransfer.getData('text');
     event.target.appendChild(document.getElementById(idFoto));
     console.log(event.target);
+  }
 }
 
 function end(event) {
   console.log('dragend');
   console.log(event.target);
   event.target.classList.remove('img-fluid');
+  event.target.classList.add('img-size');
 }
 
+// opciones de collage
