@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Billabong;
+  src: url('../assets/fonts/billabong.ttf');
+}
+
+h1 {
+  font-family: Billabong;
+  color: white;
+  font-size: 3em;
+  margin-bottom: .6em;
+}
