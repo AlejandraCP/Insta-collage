@@ -3,16 +3,36 @@ div .big {
 }
 .collage {
   height: 40vh;
-  background-color: rgb(63, 238, 180);
+  
 }
+
+.collage-new{
+  height: 20vh;
+}
+
+.w50{
+  height:20vh; 
+  width: 100%;
+}
+
+.border-white{
+  border: 3px solid white;
+}
+
+
+.big{
+  margin: 1em;
+}
+
 
 .phrase {
   height: 10vh;
-  background-color: rgb(243, 243, 207);
+  background-color: inherit;
 }
 
 .photos {
-  background-color: rgb(245, 200, 145);
+  background-color: inherit;
+  padding: 0 1em;
 }
 
 div .pad {
@@ -21,7 +41,7 @@ div .pad {
 }
 
 /* Login**/
-body{
+.color-g{
   background: linear-gradient(#78B176, #C87A59);
 }
 
@@ -149,18 +169,15 @@ input::placeholder{
 }
 
 .photos-box {
-  display: inline-block;
-}
-
-.cont-photo img {
-  border-radius: 5px;
-  height: 10rem;
+ margin: 0 auto;
 }
 
 
-.cont-photo {
-  padding: 0.3rem;
+
+.dark-b {
+  background-color: #212121;
 }
+
 
 .detect {
   background: #ddd;
@@ -168,7 +185,7 @@ input::placeholder{
 }
 
 .collage {
-  border: 1px solid black;
+  border: 2px solid white;
   height: 40vh;
 }
 
@@ -176,4 +193,32 @@ input::placeholder{
   width: 100%;
   height: 100%;
 
+}
+
+.cont-photo {
+  padding: 0;
+  height: 95px;
+  width: 95px;
+}
+
+.img-fluid{
+  width: 100%;
+  height: inherit;
+  border: 2px solid  #212121;
+}
+
+.dark-blue{
+  color: #4D799D;
+}
+
+.weight-7{
+  font-weight: 800;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
 }
