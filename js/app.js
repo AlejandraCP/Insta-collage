@@ -3,7 +3,7 @@ var photosBox = document.querySelector('.photos-box');
   var i = 0;
   for (i; i < photos.length; i++) {
     var containerPhoto = document.createElement('div');
-    containerPhoto.classList.add('cont-photo', 'col-md-2', 'col.sm-4');
+    containerPhoto.classList.add('cont-photo', 'col-md-2', 'col-xs-4');
     var photo = document.createElement('img');
     photo.src = '../assets/images/' + photos[i] + '.jpg';
     photo.setAttribute('draggable', true);
@@ -47,11 +47,29 @@ function end(event) {
 
 // opciones de collage para 4 fotos
 
-var photo4 = document.getElementById('photo4');
-var photo5 = document.getElementById('photo5');
+var photo4 = document.getElementById('photos-col-4');
+var photo3 = document.getElementById('photos-col-3');
+let option3 = document.getElementById('option-3');
+let option4 = document.getElementById('option-4');
 
 photo4.addEventListener('click', collage4);
+photo3.addEventListener('click', collage3);
 
+function collage4() {
+  option3.classList.add('hide');
+  option3.classList.remove('show');
+  option4.classList.add('show');
+  option4.classList.remove('hide');
+}
+
+function collage3() {
+  option3.classList.add('show');
+  option3.classList.remove('hide');
+  option4.classList.add('hide');
+  option4.classList.remove('show');
+}
+
+/*
 var big = document.querySelector('.big');
 function collage4() {
   var parent = document.getElementById('parent');
@@ -84,5 +102,6 @@ function collage4() {
   big.appendChild(contain2);
   contain2.appendChild(thirdChild);
   contain2.appendChild(fourthChild);
-
 }
+
+*/
