@@ -16,6 +16,14 @@ function allValidate() {
   }
 };
 
+const activeLogin = () => {
+  btnLogin.removeAttribute('disabled', 'disabled');
+};
+
+const inactiveLogin = () => {
+  btnLogin.setAttribute('disabled', 'disabled');
+};
+
 const validatePasswordUser = () => {
   let textPassword = password.value;
   const REGPASSWORD = /^[0-9a-zA-Z]+$/;
@@ -24,6 +32,7 @@ const validatePasswordUser = () => {
     allValidate();
   } else {
     validatePassword = false;
+    inactiveLogin();
   }
 };
 
@@ -35,17 +44,10 @@ const validateNameUser = () => {
     allValidate();
   } else {
     validateUsername = false;
+    inactiveLogin();
   }
 };
 
-
-const activeLogin = () => {
-  btnLogin.removeAttribute('disabled', 'disabled');
-};
-
-const inactiveLogin = () => {
-  btnLogin.setAttribute('disabled', 'disabled');
-};
 
 const nextPage = () => {
   window.location.href = 'views/index.html';

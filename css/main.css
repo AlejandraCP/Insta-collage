@@ -1,5 +1,3 @@
-
-
 .collage {
   height: 40vh;
   background-color: rgb(63, 238, 180);
@@ -19,10 +17,9 @@
   padding-right: auto;
 }
 
-
-
 /* Login**/
-.grad{
+
+.grad {
   height: 100vh;
   width: 100%;
   background: linear-gradient(#78B176, #C87A59);
@@ -30,99 +27,100 @@
   text-align: center;
 }
 
-.white{
-color: white;
+.white {
+  color: white;
 }
 
-.opacity{
-  background:  rgba(255,255,255,0.2);
+.opacity {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-input{
+input {
   width: 100%;
-  
   border: none;
   outline: none;
   border-radius: 5px;
 }
 
+input::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+}
 
-.btn-signin{
+.btn-signin {
   background-color: transparent;
-  border: 2px solid rgba(255,255,255,0.2);
- cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
   border-radius: 5px;
 }
 
-.size{
+.btn-signin:disabled{
+  color: rgba(255, 255, 255, 0.6);
+  cursor: not-allowed;
+}
+
+.size {
   font-size: 1.5em;
   margin-right: .4em;
   position: relative;
   top: 4px;
-
 }
 
-.help  {
-  color: rgba(255,255,255,0.6);
+.help {
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
 }
 
-.btn-face{
+.btn-face {
   background-color: transparent;
   border: none;
   font-weight: 700;
   cursor: pointer;
 }
 
-
-
-.size-o{
+.size-o {
   font-size: 16px;
   position: relative;
   top: 5px;
   margin: 0 10px;
 }
 
-
-.box-input{
+.box-input {
   margin: 0 2em;
 }
 
-.optionFooter{
+.optionFooter {
   height: 10vh;
   padding-top: 1em;
-  border-top: 1px solid rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.09);
-  color: rgba(255,255,255,0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.09);
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.language{
+.language {
   height: 14vh;
-  
 }
 
-.transparent{
+.transparent {
   background-color: transparent;
   border: none;
-  color: rgba(255,255,255,0.6);
-  
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.center-login{
+.center-login {
   height: 76vh;
 }
 
-.weight{
+.weight {
   font-weight: 600;
 }
 
 .line:after,
 .line:before {
-    content: '';
-    width: 40%;
-    height: 1px;
-    background: rgba(255,255,255,0.2);
-    display: inline-block;
+  content: '';
+  width: 40%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
 }
 
 @media (min-width: 720px) {
